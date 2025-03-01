@@ -1,19 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="90">
-    <author>Leo</author>
-    <version>1.0.0.0</version>
-    <title>
-		<de>Thunderfarming Loadking 60</de>
-    </title>
-    <description>
-        <de>Ladewagen Thunderfarming Edition</de>
-    </description>
-    <iconFilename>store/Loadking_60.dds</iconFilename>
-    <storeItems>
-        <storeItem xmlFilename="xml/Loadking_60.xml"/>
-    </storeItems>
-	<brands>
-        <brand title="Thunderfarming" image="brand/brand_ThF.dds" name="Thunderfarming"/>
-    </brands>
-	<multiplayer supported="true"/>
+<modDesc descVersion="96">
+  <author>Leo</author>
+  <version>1.0.0.0</version>
+  <title>
+    <en>Thunderfarming Loadking 60</en>
+    <de>Thunderfarming Loadking 60</de>
+  </title>
+  <description>
+    <en><![CDATA[
+Category: Forage Wagons
+Price: $165,000
+Required power: 300 hp
+Working speed: 17 kph
+Capacity: 60 m³
+Capacity Silage Additives: 10 L
+]]></en>
+    <de><![CDATA[
+Shopkategorie: Ladewägen
+Preis: 165.000€
+Benötigte Leistung: 300 PS
+Arbeitsgeschwindigkeit: 17 km/h
+Kapazität: 60 m³
+Kapazität Silage Zusatzstoffe: 10 L
+]]></de>
+  </description>
+  <iconFilename>store/icon_Loadking_60.dds</iconFilename>
+  <storeItems>
+    <storeItem xmlFilename="xml/Loadking_60.xml" />
+  </storeItems>
+  <brands>
+    <brand title="Thunderfarming" image="brand/brand_ThF.dds" name="Thunderfarming" />
+  </brands>
+  <multiplayer supported="true" />
 </modDesc>

@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
         <name>
-            <en>SHUTTLE 490 S</en></name>
+            <en>Loadking 60</en></name>
         <specs>
             <neededPower>300</neededPower>
             <combination xmlFilename="$data/objects/pallets/silageAdditive/silageAdditivePallet.xml"/>
@@ -11,11 +11,11 @@
         <functions>
             <function>$l10n_function_forageWagon</function>
         </functions>
-        <image>store_shuttle490S.dds</image>
+        <image>store/store_Loadking_60.dds</image>
         <price>165000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
-        <brand>BERGMANN</brand>
+        <brand>Thunderfarming</brand>
         <category>loaderWagons</category>
         <shopTranslationOffset>0 0.01 0</shopTranslationOffset>
         <shopRotationOffset>-0.139 0 0</shopRotationOffset>
@@ -350,7 +350,7 @@
         <fillUnitConfigurations title="$l10n_configuration_silageAdditives" isYesNoOption="true">
             <fillUnitConfiguration name="$l10n_configuration_valueNo" price="0">
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon" capacity="49500" allowAILoading="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon" capacity="60500" allowAILoading="true">
                         <exactFillRootNode node="exactFillRootNode"/>
                         <autoAimTargetNode node="fillAutoAimTarget" startZ="3.169" endZ="-4.231" invert="false" startPercentage="25"/>
                     </fillUnit>
@@ -358,7 +358,7 @@
             </fillUnitConfiguration>
             <fillUnitConfiguration name="$l10n_configuration_valueYes" price="2000">
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon" capacity="49500" allowAILoading="true">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon" capacity="60500" allowAILoading="true">
                         <exactFillRootNode node="exactFillRootNode"/>
                         <autoAimTargetNode node="fillAutoAimTarget" startZ="3.169" endZ="-4.231" invert="false" startPercentage="25"/>
                     </fillUnit>
@@ -416,7 +416,7 @@
         </trailerConfigurations>
     </trailer>
     <dischargeable>
-        <dischargeNode node="dischargeNode" emptySpeed="3300" fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true">
+        <dischargeNode node="dischargeNode" emptySpeed="6300" fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true">
             <info width="1.5" length="0.5"/>
             <effects>
                 <effectNode effectClass="TipEffect">
@@ -482,6 +482,24 @@
         <bendingNode minX="-1.25" maxX="1.25" minZ="-5.65" maxZ="-3.4" yOffset="1.4"/>
         <bendingNode minX="-0.25" maxX="0.25" minZ="4.3" maxZ="6.7" yOffset="0.8"/>
     </foliageBending>
+
+    <baseColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint" title="Karosserie">
+        <baseColorConfiguration name="Thunderfarming Black" color="0 0 0" isDefault="true" />
+        <material materialSlotName="Body" />
+    </baseColorConfigurations>
+    <designColorConfigurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint" title="Klappen">
+        <designColorConfiguration name="Thunderfarming Grau" color="SHARED_GREY5" isDefault="true" />
+        <material materialSlotName="Lippen" />
+    </designColorConfigurations>
+    <designColor2Configurations useDefaultColors="true" defaultColorMaterialTemplateName="calibratedMetallicPaint" title="Logo Hintergrund">
+        <designColor2Configuration name="Thunderfarming Grau" color="SHARED_GREY5" isDefault="true" />
+        <material materialSlotName="Logo" />
+    </designColor2Configurations>
+    <rimColorConfigurations useDefaultColors="true">
+        <rimColorConfiguration materialTemplateName="FENDT_RED1" />
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK" />
+    </rimColorConfigurations>
+
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
     <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
     <i3dMappings>
